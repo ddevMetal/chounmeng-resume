@@ -69,14 +69,13 @@ export default function Hero() {
 
           {/* ── Right: QR placeholder ── */}
           <div className="flex flex-col items-center gap-2 self-start md:self-center animate-fade-up-4">
-            {/*
-              Replace the div below with:
-              <img src="/qr.png" alt="QR Code — ddevmetal.github.io" width="112" className="rounded-xl" />
-            */}
-            <div className="border-2 border-dashed border-cv-teal/20 rounded-xl w-28 h-28 flex flex-col items-center justify-center text-cv-muted text-center p-3 hover:border-cv-teal/60 transition-colors duration-300 cursor-default select-none">
-              <span className="text-3xl mb-1">⬛</span>
-              <span className="text-[0.58rem] leading-relaxed">QR code<br />goes here</span>
-            </div>
+            <img
+              src="/chounmeng-resume/qr.png"
+              alt="QR Code — ddevmetal.github.io/chounmeng-resume"
+              width="112"
+              height="112"
+              className="rounded-xl border border-cv-teal/20 hover:border-cv-teal transition-colors duration-300"
+            />
             <p className="text-[0.62rem] text-cv-muted text-center leading-relaxed">
               ddevmetal<br />.github.io
             </p>

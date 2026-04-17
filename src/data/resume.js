@@ -4,7 +4,7 @@ export const personal = {
   title:    'Computer Science (Big Data) Graduate',
   github:   { url: 'https://github.com/ddevMetal',              label: '@ddevMetal'       },
   linkedin: { url: 'https://linkedin.com/in/choun-meng-teo',    label: 'choun-meng-teo'   },
-  email:    'your-email@example.com', // TODO: replace before deploying
+  email:    'tchounmeng@gmail.com', // TODO: replace before deploying
 };
 
 // ─── Summary ─────────────────────────────────────────────────────────────────
@@ -110,7 +110,7 @@ export const projects = [
 
 // ─── Certifications ──────────────────────────────────────────────────────────
 export const certifications = [
-  { icon: '☁️', name: 'AWS Cloud Practitioner',                             date: 'Expected Jan 2026'                           },
+  { icon: '☁️', name: 'AWS Cloud Practitioner',                             date: 'Expected Jul 2026'                           },
   { icon: '🔐', name: 'Certificate of Cloud Security Knowledge v.4',        date: 'Mar 2023'                                    },
   { icon: '🎓', name: 'SGUS ICT — Cybersecurity & Data Analytics',          date: 'Sep 2021 – Feb 2022 · Nanyang Polytechnic'   },
 ];
@@ -119,7 +119,7 @@ export const certifications = [
 export const awards = [
   { icon: '🥈', name: 'SDBF Dragonboat Race — 2nd Place',        meta: 'SAFSA · 2019'                 },
   { icon: '🏅', name: 'Flames of Merit',                          meta: 'SIM Canoeing Team · 2014'     },
-  { icon: '🥇', name: 'National Canoeing Championship — Gold',    meta: '2013'                         },
+  { icon: '🥇', name: 'National Canoeing Championship 1000m k4 — Gold',    meta: '2013'                         },
   { icon: '🏆', name: 'Sports Excellence Award',                  meta: 'Republic Polytechnic · 2010'  },
   { icon: '🥈', name: 'Pol-Lite Kayak Championship — Silver',     meta: '2009'                         },
 ];
