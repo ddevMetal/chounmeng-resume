@@ -49,9 +49,9 @@ export default function Hero() {
             </p>
 
             <p className="text-cv-muted leading-relaxed mb-8 max-w-md animate-fade-up-3">
-              Motivated CS graduate specialising in Big Data at SIM/UOW, with strong
-              leadership experience from military service. Combining technical depth
-              with business acumen.
+              CS (Big Data) graduate from SIM/UOW, pivoting into cybersecurity —
+              targeting SOC and security operations roles. Backed by a decade of
+              cross-industry leadership and a foundation in data analytics and cloud security.
             </p>
 
             <div className="flex flex-wrap gap-3 animate-fade-up-4">

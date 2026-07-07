@@ -4,21 +4,29 @@ export const personal = {
   title:    'Computer Science (Big Data) Graduate',
   github:   { url: 'https://github.com/ddevMetal',              label: '@ddevMetal'       },
   linkedin: { url: 'https://linkedin.com/in/choun-meng-teo',    label: 'choun-meng-teo'   },
-  email:    'tchounmeng@gmail.com', // TODO: replace before deploying
+  email:    'tchounmeng@gmail.com',
 };
 
 // ─── Summary ─────────────────────────────────────────────────────────────────
-export const summary =
-  "Motivated Computer Science graduate specialising in Big Data at SIM/UOW with strong " +
-  "leadership experience from military service. Holds a Bachelor's in Business Marketing, " +
-  "combining technical and business expertise.";
+export const summary = {
+  tagline:
+    "Computer Science (Big Data) graduate from SIM/University of Wollongong, actively targeting a transition into cybersecurity — " +
+    "with a focus on SOC and security operations roles. Brings cross-industry leadership, cloud security knowledge, " +
+    "and a strong analytical foundation in Big Data and data analytics.",
+  body:
+    "A mid-career switcher who earned a CS degree while raising a young child — completing the programme as a mature student " +
+    "alongside full-time work and family responsibilities. Holds a prior degree in Business Marketing from RMIT University, " +
+    "backed by over a decade of professional and military leadership with the Singapore Armed Forces, " +
+    "including operational experience with the Army Deployment Force (ADF). " +
+    "Combines technical depth with real-world business perspective, and a proven ability to deliver under pressure.",
+};
 
 // ─── Skills ──────────────────────────────────────────────────────────────────
 export const skills = [
   {
     category: 'Programming',
     icon: '💻',
-    items: ['C++', 'Java', 'Python', 'Flutter', 'Dart', 'HTML', 'CSS', 'JavaScript', 'SQL', 'PL/SQL'],
+    items: ['C++', 'Java', 'Python', 'Flutter', 'Dart', 'HTML', 'CSS', 'JavaScript', 'SQL', 'PL/SQL', 'Tailwind CSS', 'Vite', 'React'],
   },
   {
     category: 'Big Data',
@@ -38,21 +46,26 @@ export const skills = [
   {
     category: 'Security',
     icon: '🔐',
-    items: ['HTTPS / TLS', 'HSTS', 'Same-Origin Policy', 'Web App Security', 'WireShark'],
+    items: ['HTTPS / TLS', 'HSTS', 'Same-Origin Policy', 'Web App Security', 'Wireshark'],
   },
   {
     category: 'Tools',
     icon: '🛠️',
     items: ['Git', 'VS Code', 'MySQL Workbench', 'Microsoft Project', 'Power BI', 'Ubuntu Linux', 'PRoot Debian + Termux', 'Fedora Linux', 'PowerShell'],
   },
+  {
+    category: 'Methodologies & Management',
+    icon: '📋',
+    items: ['OOP', 'OO Design', 'Agile', 'SDLC', 'CI/CD', 'Project Management'],
+  },
 ];
 
 // ─── Experience ──────────────────────────────────────────────────────────────
 export const experience = [
-  { role: 'Logistic Setup Supervisor',  company: 'Rainbow Electrical Pte Ltd',        period: 'Dec 2022 – Present'     },
-  { role: 'Technical Consultant',       company: 'TruVisor Pte Ltd',                  period: 'Apr 2022 – May 2022'    },
-  { role: 'Infantry Leader',            company: 'Singapore Armed Forces (SAF)',       period: 'Jul 2017 – Oct 2021'    },
-  { role: 'Events & Sales Executive',   company: 'Rainbow Electrical Pte Ltd',        period: 'Jul 2012 – Jan 2017'    },
+  { role: 'Events Operation Supervisor (Electrical and AV)',  company: 'Rainbow Electrical Services Pte Ltd',  period: 'Jan 2023 – Present (Freelance)'  },
+  { role: 'Technical Consultant',       company: 'TruVisor.io',                        period: 'Mar 2022 – Apr 2022'    },
+  { role: 'Infantry Team Leader',       company: 'Singapore Armed Forces (SAF)',       period: 'Jul 2017 – Oct 2021'    },
+  { role: 'Event and Sales Executive',  company: 'Rainbow Electrical Pte Ltd',        period: 'Sep 2012 – Jul 2016'    },
   { role: 'Combat Diver',               company: 'Republic of Singapore Navy, NDU',   period: 'Sep 2010 – Apr 2012'    },
 ];
 
@@ -61,7 +74,7 @@ export const education = [
   {
     degree: 'B.Sc. Computer Science (Big Data)',
     school: 'SIM / University of Wollongong',
-    period: 'Oct 2022 – Expected Jun 2026',
+    period: 'Oct 2022 – Jul 2026',
   },
   {
     degree: 'B.Bus. Marketing',
@@ -125,7 +138,7 @@ export const projects = [
 
 // ─── Certifications ──────────────────────────────────────────────────────────
 export const certifications = [
-  { icon: '☁️', name: 'AWS Cloud Practitioner',                             date: 'Expected Jul 2026'                           },
+  { icon: '☁️', name: 'AWS Cloud Practitioner Certification — Prep Course', date: 'Jun 2025 · SIM Centre for Micro-Credentials' },
   { icon: '🔐', name: 'Certificate of Cloud Security Knowledge v.4',        date: 'Mar 2023'                                    },
   { icon: '🎓', name: 'SGUS ICT — Cybersecurity & Data Analytics',          date: 'Sep 2021 – Feb 2022 · Nanyang Polytechnic'   },
 ];
