@@ -38,12 +38,12 @@ export const skills = [
   {
     category: 'Security',
     icon: '🔐',
-    items: ['HTTPS / TLS', 'HSTS', 'Same-Origin Policy', 'Web App Security'],
+    items: ['HTTPS / TLS', 'HSTS', 'Same-Origin Policy', 'Web App Security', 'WireShark'],
   },
   {
     category: 'Tools',
     icon: '🛠️',
-    items: ['Git', 'VS Code', 'MySQL Workbench', 'Microsoft Project', 'Power BI', 'Ubuntu Linux'],
+    items: ['Git', 'VS Code', 'MySQL Workbench', 'Microsoft Project', 'Power BI', 'Ubuntu Linux', 'PRoot Debian + Termux', 'Fedora Linux', 'PowerShell'],
   },
 ];
 
@@ -77,6 +77,21 @@ export const education = [
 
 // ─── Projects ────────────────────────────────────────────────────────────────
 export const projects = [
+  {
+    icon: '🌐',
+    name: 'Interactive Resume Webpage',
+    description:
+      'Designed and built this personal resume site using React, Vite, and Tailwind CSS — entirely coded on a Samsung S24 Ultra via PRoot Debian on Termux, with AI-assisted development.',
+    github: 'https://github.com/ddevMetal/chounmeng-resume',
+  },
+  {
+    icon: '⚙️',
+    name: 'OpenClaw Business Automation V1',
+    description:
+      'AI-powered Discord bot that automates payroll, sales invoicing, and financial reporting for a small business — replacing manual Google Drive workflows. Built on OpenClaw; coded on Samsung S24 Ultra via PRoot Debian on Termux. V2 production release planned.',
+    github: null,
+    note: 'Private repository',
+  },
   {
     icon: '📱',
     name: 'Fitness Mobile App (FYP)',
