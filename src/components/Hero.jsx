@@ -1,3 +1,4 @@
+import { QRCodeSVG } from 'qrcode.react';
 import { personal } from '../data/resume';
 
 function GithubIcon() {
@@ -67,17 +68,20 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* ── Right: QR placeholder ── */}
-          <div className="flex flex-col items-center gap-2 self-start md:self-center animate-fade-up-4">
-            <img
-              src="/chounmeng-resume/qr.png"
-              alt="QR Code — ddevmetal.github.io/chounmeng-resume"
-              width="112"
-              height="112"
-              className="rounded-xl border border-cv-teal/20 hover:border-cv-teal transition-colors duration-300"
-            />
+          {/* ── Right: QR code ── */}
+          <div className="flex flex-col items-center gap-3 self-start md:self-center animate-fade-up-4">
+            <div className="p-3 rounded-xl border border-cv-teal/20 hover:border-cv-teal transition-colors duration-300 bg-cv-card shadow-teal-sm">
+              <QRCodeSVG
+                value="https://www.linkedin.com/in/choun-meng-teo/"
+                size={108}
+                bgColor="#112240"
+                fgColor="#64ffda"
+                level="M"
+                marginSize={0}
+              />
+            </div>
             <p className="text-[0.62rem] text-cv-muted text-center leading-relaxed">
-              ddevmetal<br />.github.io
+              LinkedIn<br />Profile
             </p>
           </div>
 
