@@ -13,7 +13,7 @@ export const personal = {
 // ─── Summary ─────────────────────────────────────────────────────────────────
 export const summary = {
   tagline:
-    "Computer Science Graduate & Operational Leader Pivoting to Cybersecurity — bridging a technical foundation in " +
+    "Computer Science Graduate & Operational Leader Pivoting to Cybersecurity, laveraging a technical foundation in " +
     "Big Data with a decade of leadership across military operations and client-facing project management. " +
     "Actively targeting SOC and GRC roles in Singapore's growing cybersecurity ecosystem.",
   intro:
@@ -153,7 +153,7 @@ export const experience = [
   },
   {
     role: "Combat Diver",
-    company: "Republic of Singapore Navy, NDU",
+    company: "Republic of Singapore Navy, Naval Diving Unit",
     period: "Sep 2010 – Apr 2012",
   },
 ];
