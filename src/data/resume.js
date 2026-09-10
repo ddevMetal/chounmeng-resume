@@ -228,6 +228,18 @@ export const projects = [
 // ─── Certifications ──────────────────────────────────────────────────────────
 export const certifications = [
   {
+    icon: "🛡️",
+    name: "Cybersecurity Essentials (24 hrs)",
+    date: "19–26 Sep 2026 · ASK Training Pte Ltd",
+    status: "in_progress",
+  },
+  {
+    icon: "🕵️",
+    name: "Cybersecurity and Ethical Hacking (32 hrs)",
+    date: "8–13 Oct 2026 · ASK Training Pte Ltd",
+    status: "in_progress",
+  },
+  {
     icon: "☁️",
     name: "AWS Cloud Practitioner Certification — Prep Course",
     date: "Jun 2025 · SIM Centre for Micro-Credentials",
