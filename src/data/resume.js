@@ -13,36 +13,38 @@ export const personal = {
 // ─── Summary ─────────────────────────────────────────────────────────────────
 export const summary = {
   tagline:
-    "Computer Science Graduate & Operational Leader Pivoting to Cybersecurity, laveraging a technical foundation in " +
-    "Big Data with a decade of leadership across military operations and client-facing project management. " +
-    "Actively targeting SOC and GRC roles in Singapore's growing cybersecurity ecosystem.",
-  intro:
-    "I thrive at the intersection of process discipline, risk management, and technology. My journey to " +
-    "cybersecurity combines hard technical training with a proven track record of operational execution:",
+    "CS graduate and former SAF First Sergeant moving into security and infrastructure, bringing " +
+    "hands-on security training, a cloud security certification, and years of executing under pressure.",
+  // intro is optional: leave it as "" to hide it
+  intro: "",
   highlights: [
     {
-      label: "The Technical Foundation",
+      label: "Security foundation",
       text:
-        "Recently graduated with a BSc in Computer Science (Big Data) from SIM/University of Wollongong, " +
-        "building on an intensive SGUnited data analytics and machine learning programme.",
+        "CCSK certified. Completing ASK Training's Cybersecurity Essentials and Ethical Hacking courses, " +
+        "with Security+ to follow.",
     },
     {
-      label: "Crisis & Process Leadership",
+      label: "Technical base",
       text:
-        "Served 5 years as an Infantry Specialist and Operator in the Singapore Armed Forces (Army Deployment " +
-        "Force). This sharpened my ability to execute under pressure and adhere strictly to operational protocols.",
+        "BSc Computer Science (Big Data), SIM / UOW, plus a Diploma in Business Computing. " +
+        "Hands-on with Linux, PowerShell and Wireshark.",
     },
     {
-      label: "Client & Business Agility",
+      label: "Operational discipline",
       text:
-        "Spent over a decade in the MICE and events sector (holding a Business Marketing degree from RMIT). " +
-        "As an Operations Supervisor, I co-led a successful corporate business pivot post-COVID, building a " +
-        "lean team from the ground up and earning key stakeholder trust that secured a major client contract.",
+        "4+ years as an SAF Infantry Specialist, leaving as First Sergeant after serving as Section 2IC " +
+        "in the Army Deployment Force.",
+    },
+    {
+      label: "Technical operations",
+      text:
+        "Freelance supervisor for electrical and AV setups, leading the day's crew to deliver on schedule.",
     },
   ],
   closing:
-    "Today, I am translating this operator's discipline and technical mindset into securing digital assets. " +
-    "I am ready to bring high autonomy, rapid adaptability, and a risk-aware mindset to a forward-thinking security team.",
+    "Looking for an entry role in security operations or IT infrastructure where I can learn fast, " +
+    "follow process closely, and grow into incident response.",
 };
 
 // ─── Skills ──────────────────────────────────────────────────────────────────

@@ -7,7 +7,10 @@ export default function Summary() {
       <SectionHeader tag="About Me" title="Professional Summary" />
       <blockquote className="border-l-[3px] border-cv-teal bg-cv-card rounded-r-xl px-6 py-5 max-w-3xl space-y-4">
         <p className="text-cv-bright font-semibold leading-[1.85] text-[0.97rem]">{summary.tagline}</p>
-        <p className="text-cv-text leading-[1.95] text-[0.97rem]">{summary.intro}</p>
+        {/* Only drawn when intro has text */}
+        {summary.intro && (
+          <p className="text-cv-text leading-[1.95] text-[0.97rem]">{summary.intro}</p>
+        )}
         <ul className="space-y-3">
           {summary.highlights.map((h) => (
             <li key={h.label} className="text-cv-text leading-[1.95] text-[0.97rem]">
