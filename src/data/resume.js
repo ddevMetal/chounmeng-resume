@@ -1,7 +1,7 @@
 // ─── Personal ────────────────────────────────────────────────────────────────
 export const personal = {
   name: "Teo Choun Meng",
-  title: "Computer Science (Big Data) Graduate",
+  title: "Cybersecurity & Infrastructure · CS Graduate · CCSK Certified",
   github: { url: "https://github.com/ddevMetal", label: "@ddevMetal" },
   linkedin: {
     url: "https://linkedin.com/in/choun-meng-teo",

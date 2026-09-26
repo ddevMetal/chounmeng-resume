@@ -50,9 +50,9 @@ export default function Hero() {
             </p>
 
             <p className="text-cv-muted leading-relaxed mb-8 max-w-md animate-fade-up-3">
-              CS (Big Data) graduate from SIM/UOW, pivoting into cybersecurity —
-              targeting SOC and security operations roles. Backed by a decade of
-              cross-industry leadership and a foundation in data analytics and cloud security.
+              Career switcher moving into security and infrastructure, starting in
+              security operations. CS degree from SIM / UOW, cloud security certified,
+              Security+ in progress. Open to SOC, NOC and IT infrastructure roles.
             </p>
 
             <div className="flex flex-wrap gap-3 animate-fade-up-4">
