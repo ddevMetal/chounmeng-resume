@@ -21,8 +21,8 @@ export const summary = {
     {
       label: "Security foundation",
       text:
-        "CCSK certified. Completing ASK Training's Cybersecurity Essentials and Ethical Hacking courses, " +
-        "with Security+ to follow.",
+        "CCSK certified. Completed ASK Training's Cybersecurity Essentials; Ethical Hacking in Oct 2026, " +
+        "leading to Security+.",
     },
     {
       label: "Technical base",
@@ -153,7 +153,7 @@ export const experience = [
     bullets: [
       "Supported product demo labs on the company's cloud infrastructure, showing how its security products integrate for prospective clients.",
       "Trained in identity and access management (OneLogin SSO), with exposure to Utimaco key management and Armis asset visibility.",
-      "Earned the CCSK cloud security certification during the role.",
+      "Started the CCSK cloud security certification during the role (completed Mar 2023).",
     ],
   },
   {
@@ -249,33 +249,49 @@ export const projects = [
 ];
 
 // ─── Certifications ──────────────────────────────────────────────────────────
+// status options (each shows a small label on the card):
+//   "certified"   → Certified    (a certification you hold)
+//   "completed"   → Completed    (a course you finished)
+//   "in_progress" → In progress
+//   "upcoming"    → Upcoming
+//   "course"      → Course       (a prep or training course, not a certification)
+// Leave status out to show no label.
 export const certifications = [
   {
+    icon: "🔐",
+    name: "Certificate of Cloud Security Knowledge (CCSK) v4",
+    date: "Mar 2023 · Cloud Security Alliance",
+    status: "certified",
+  },
+  {
     icon: "🛡️",
-    name: "Cybersecurity Essentials (24 hrs)",
-    date: "19–26 Sep 2026 · ASK Training Pte Ltd",
+    name: "CompTIA Security+ (SY0-701)",
+    date: "Exam after ASK courses · target Q4 2026",
     status: "in_progress",
   },
   {
     icon: "🕵️",
     name: "Cybersecurity and Ethical Hacking (32 hrs)",
-    date: "8–13 Oct 2026 · ASK Training Pte Ltd",
-    status: "in_progress",
+    date: "Oct 2026 · ASK Training Pte Ltd",
+    status: "upcoming",
   },
   {
-    icon: "☁️",
-    name: "AWS Cloud Practitioner Certification — Prep Course",
-    date: "Jun 2025 · SIM Centre for Micro-Credentials",
-  },
-  {
-    icon: "🔐",
-    name: "Certificate of Cloud Security Knowledge v.4",
-    date: "Mar 2023",
+    icon: "✅",
+    name: "Cybersecurity Essentials (24 hrs)",
+    date: "Sep 2026 · ASK Training Pte Ltd",
+    status: "completed",
   },
   {
     icon: "🎓",
     name: "SGUS ICT — Cybersecurity & Data Analytics",
     date: "Sep 2021 – Feb 2022 · Nanyang Polytechnic",
+    status: "completed",
+  },
+  {
+    icon: "☁️",
+    name: "AWS Cloud Practitioner — Prep Course",
+    date: "Jun 2025 · SIM Centre for Micro-Credentials",
+    status: "course",
   },
 ];
 
