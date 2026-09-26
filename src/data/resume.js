@@ -153,7 +153,7 @@ export const education = [
       "Database Systems: Oracle, PL/SQL, indexing, MongoDB",
       "Big Data Management: Hadoop, Hive, HBase, Spark",
       "Knowledge Engineering: data cleaning, clustering, association rules",
-      "Foundations of AI: KNN, MLP and CNN classifiers",
+      "Foundations & Modern AI: KNN, MLP and CNN classifiers, search algorithms, PyTorch",
       "Web Security",
     ],
   },
@@ -241,11 +241,13 @@ export const projects = [
   {
     type: "academic",
     icon: "🧠",
-    name: "Image Classification: KNN, MLP & CNN",
-    meta: "Individual · Foundations of AI · 2025",
+    name: "AI Coursework: Foundations & Modern AI",
+    meta: "Individual · Foundations of AI & Modern AI · 2025",
     description:
-      "Built KNN, MLP and CNN image classifiers, and reported how colour histogram bin size affects KNN accuracy.",
-    tags: ["Python", "Keras", "Machine learning"],
+      "Built KNN, MLP and CNN image classifiers and reported how colour histogram bin size affects KNN accuracy. " +
+      "Trained and compared a CNN and a fully connected network on CIFAR-10 in PyTorch, and analysed how cost " +
+      "settings change the path chosen by uniform cost search.",
+    tags: ["Python", "PyTorch", "Keras", "Machine learning"],
   },
   {
     type: "academic",
