@@ -48,87 +48,47 @@ export const summary = {
 };
 
 // ─── Skills ──────────────────────────────────────────────────────────────────
+// Each group lists skills with the evidence behind them.
+//   name:     the skill
+//   evidence: where you actually used it (keep it short and true)
+// Only list skills you can back up. Move items from learningNext into a group once done.
 export const skills = [
-  {
-    category: "Programming",
-    icon: "💻",
-    items: [
-      "C++",
-      "Java",
-      "Python",
-      "Flutter",
-      "Dart",
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "SQL",
-      "PL/SQL",
-      "Tailwind CSS",
-      "Vite",
-      "React",
-    ],
-  },
-  {
-    category: "Big Data",
-    icon: "📦",
-    items: [
-      "Hadoop HDFS",
-      "MapReduce",
-      "Apache Hive (HQL)",
-      "Docker",
-      "beeline CLI",
-    ],
-  },
-  {
-    category: "Databases",
-    icon: "🗄️",
-    items: ["MySQL", "Oracle SQL", "MongoDB", "Firebase", "NoSQL"],
-  },
-  {
-    category: "Machine Learning / AI",
-    icon: "🤖",
-    items: [
-      "TensorFlow",
-      "PyTorch",
-      "Scikit-Learn",
-      "Pandas",
-      "NumPy",
-      "Matplotlib",
-      "CNN",
-      "DNN",
-    ],
-  },
   {
     category: "Security",
     icon: "🔐",
     items: [
-      "HTTPS / TLS",
-      "HSTS",
-      "Same-Origin Policy",
-      "Web App Security",
-      "Wireshark",
+      { name: "Cloud security", evidence: "CCSK v4 certification (Mar 2023)" },
+      { name: "IAM / SSO basics", evidence: "OneLogin SSO training at TruVisor" },
+      { name: "Web security (TLS, HSTS, Same-Origin Policy)", evidence: "University Web Security module" },
     ],
   },
   {
-    category: "Tools",
-    icon: "🛠️",
+    category: "Systems & Networking",
+    icon: "🖥️",
     items: [
-      "Git",
-      "VS Code",
-      "MySQL Workbench",
-      "Microsoft Project",
-      "Power BI",
-      "Ubuntu Linux",
-      "PRoot Debian + Termux",
-      "Fedora Linux",
-      "PowerShell",
+      { name: "Linux (Fedora, Debian)", evidence: "Always-on home lab server; this site built in Debian on Termux" },
+      { name: "Nginx, PM2, Tailscale", evidence: "Home lab: web routing, keeping services running, private remote access" },
+      { name: "Command line (PowerShell, Bash)", evidence: "Daily Git workflow; home server administration" },
+      { name: "Git & GitHub Actions", evidence: "Version control and auto-deploy for this site" },
+      { name: "Docker", evidence: "Hadoop cluster in Big Data coursework" },
     ],
   },
   {
-    category: "Methodologies & Management",
-    icon: "📋",
-    items: ["OOP", "OO Design", "Agile", "SDLC", "CI/CD", "Project Management"],
+    category: "Scripting",
+    icon: "⌨️",
+    items: [
+      { name: "Python", evidence: "Coursework and automation practice" },
+      { name: "SQL", evidence: "Database coursework" },
+      { name: "JavaScript / React", evidence: "This portfolio site" },
+    ],
   },
+];
+
+// Short "learning next" line shown under the skills
+export const learningNext = [
+  "Wireshark and packet analysis",
+  "Network scanning (Nmap)",
+  "Security+ exam prep",
 ];
 
 // ─── Experience ──────────────────────────────────────────────────────────────
