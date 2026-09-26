@@ -78,7 +78,8 @@ export const skills = [
     icon: "⌨️",
     items: [
       { name: "Python", evidence: "Data exploration and cleaning with Pandas; algorithm benchmarking; automation practice" },
-      { name: "SQL & MongoDB", evidence: "Queries, updates and aggregation pipelines (Databases module)" },
+      { name: "SQL (Oracle, PL/SQL) & MongoDB", evidence: "Indexing, PL/SQL and normalisation in Oracle; MongoDB queries and aggregation (Database Systems module)" },
+      { name: "Big data (Hadoop, Hive, Spark, HBase)", evidence: "HDFS and MapReduce in Java, Hive data warehouse, Spark DataFrames in Scala (Big Data Management module)" },
       { name: "JavaScript / React", evidence: "This portfolio site" },
     ],
   },
