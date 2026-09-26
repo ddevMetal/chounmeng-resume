@@ -130,29 +130,50 @@ export const skills = [
 ];
 
 // ─── Experience ──────────────────────────────────────────────────────────────
+// Each role can have:
+//   bullets: a list of points shown as a bulleted list
+//   note:    a single plain line (used for older, lower-priority roles)
+// Both are optional. A role with neither shows only title, company and dates.
 export const experience = [
   {
-    role: "Events Operation Supervisor (Electrical and AV)",
+    role: "Freelance Supervisor, Electrical & AV",
     company: "Rainbow Electrical Services Pte Ltd",
-    period: "Jan 2023 – Present (Freelance)",
+    period: "Jan 2023 – Present",
+    bullets: [
+      "Lead the day's assigned crew to meet event task requirements on schedule.",
+      "Set up and troubleshoot electrical and AV systems on site.",
+    ],
   },
   {
     role: "Technical Consultant",
     company: "TruVisor.io",
     period: "Mar 2022 – Apr 2022",
+    bullets: [
+      "Supported product demo labs on the company's cloud infrastructure, showing how its security products integrate for prospective clients.",
+      "Trained in identity and access management (OneLogin SSO), with exposure to Utimaco key management and Armis asset visibility.",
+      "Earned the CCSK cloud security certification during the role.",
+    ],
   },
   {
-    role: "Infantry Team Leader",
-    company: "Singapore Armed Forces (SAF)",
+    role: "Infantry Specialist · First Sergeant (1SG)",
+    company: "Singapore Armed Forces",
     period: "Jul 2017 – Oct 2021",
+    bullets: [
+      "Graduated from Specialist Cadet School (SCS), 2017–2018.",
+      "Trainer and Section Leader at Basic Military Training Centre (BMTC), 2018.",
+      "Completed the Army Deployment Force Combat Qualification Course (CQC), 2019.",
+      "Section 2IC, Operations Company, Army Deployment Force, 2019–2021.",
+      "Digital Media Team, NDP 2021.",
+    ],
   },
   {
     role: "Event and Sales Executive",
     company: "Rainbow Electrical Pte Ltd",
     period: "Sep 2012 – Jul 2016",
+    note: "Supervised project delivery for key accounts, from sales through on-site electrical installation.",
   },
   {
-    role: "Combat Diver",
+    role: "Combat Diver (National Service)",
     company: "Republic of Singapore Navy, Naval Diving Unit",
     period: "Sep 2010 – Apr 2012",
   },

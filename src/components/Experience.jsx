@@ -15,7 +15,7 @@ export default function Experience() {
           className="absolute left-[9px] top-3 bottom-3 w-0.5 bg-gradient-to-b from-cv-teal to-transparent"
         />
 
-        {experience.map(({ role, company, period }) => (
+        {experience.map(({ role, company, period, bullets, note }) => (
           <div
             key={`${company}-${role}`}
             className="relative bg-cv-card border border-cv-teal/20 rounded-xl px-6 py-5 transition-all duration-300 hover:border-cv-teal hover:translate-x-1.5 hover:shadow-teal-sm"
@@ -34,6 +34,20 @@ export default function Experience() {
               </span>
             </div>
             <p className="text-cv-muted text-sm">{company}</p>
+
+            {/* Bullet points: only drawn if this role has them */}
+            {bullets && bullets.length > 0 && (
+              <ul className="mt-3 list-disc pl-5 space-y-1.5 text-cv-text text-sm leading-relaxed">
+                {bullets.map((point) => (
+                  <li key={point}>{point}</li>
+                ))}
+              </ul>
+            )}
+
+            {/* Single plain line: used for older, lower-priority roles */}
+            {note && (
+              <p className="mt-2 text-cv-muted text-sm leading-relaxed">{note}</p>
+            )}
           </div>
         ))}
       </div>
