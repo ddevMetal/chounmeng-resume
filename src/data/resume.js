@@ -148,9 +148,17 @@ export const education = [
     degree: "B.Sc. Computer Science (Big Data)",
     school: "SIM / University of Wollongong",
     period: "Oct 2022 – Jul 2026",
+    // optional: key modules, shown as a list under the degree
+    coursework: [
+      "Database Systems: Oracle, PL/SQL, indexing, MongoDB",
+      "Big Data Management: Hadoop, Hive, HBase, Spark",
+      "Knowledge Engineering: data cleaning, clustering, association rules",
+      "Foundations of AI: KNN, MLP and CNN classifiers",
+      "Web Security",
+    ],
   },
   {
-    degree: "B.Bus. Marketing",
+    degree: "Bachelor of Business (Marketing)",
     school: "RMIT University",
     period: "Jan 2012 – Apr 2014",
   },
