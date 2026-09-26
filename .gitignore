@@ -4,3 +4,7 @@ dist/
 .env.local
 .DS_Store
 *.local
+
+# Private notes and editor settings (never upload)
+documentation/
+.vscode/
