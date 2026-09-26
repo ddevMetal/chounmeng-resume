@@ -74,11 +74,11 @@ export const skills = [
     ],
   },
   {
-    category: "Scripting",
+    category: "Scripting & Data",
     icon: "⌨️",
     items: [
-      { name: "Python", evidence: "Coursework and automation practice" },
-      { name: "SQL", evidence: "Database coursework" },
+      { name: "Python", evidence: "Data exploration and cleaning with Pandas; algorithm benchmarking; automation practice" },
+      { name: "SQL & MongoDB", evidence: "Queries, updates and aggregation pipelines (Databases module)" },
       { name: "JavaScript / React", evidence: "This portfolio site" },
     ],
   },
