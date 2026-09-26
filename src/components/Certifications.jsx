@@ -1,39 +1,39 @@
-import Section, { SectionHeader } from './Section';
+import Section from './Section';
 import { certifications } from '../data/resume';
 
 // Label text and colour for each status value used in resume.js
 const STATUS_STYLES = {
-  certified:   { label: 'Certified',   cls: 'text-cv-navy bg-cv-teal border-cv-teal' },
-  completed:   { label: 'Completed',   cls: 'text-cv-teal border-cv-teal/40' },
-  in_progress: { label: 'In Progress', cls: 'text-amber-400 border-amber-400/40' },
-  upcoming:    { label: 'Upcoming',    cls: 'text-cv-muted border-cv-muted/40 border-dashed' },
-  course:      { label: 'Course',      cls: 'text-cv-muted border-cv-muted/40' },
+  certified:   { label: 'Certified',   cls: 'bg-cv-teal text-cv-navy border-cv-teal' },
+  completed:   { label: 'Completed',   cls: 'text-cv-teal border-cv-teal/60' },
+  in_progress: { label: 'In progress', cls: 'text-amber-400 border-amber-400/60' },
+  upcoming:    { label: 'Upcoming',    cls: 'text-cv-muted border-cv-muted/50 border-dashed' },
+  course:      { label: 'Course',      cls: 'text-cv-muted border-cv-muted/50' },
 };
 
 export default function Certifications() {
   return (
-    <Section id="certifications">
-      <SectionHeader tag="Credentials" title="Certifications & Training" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {certifications.map(({ icon, name, date, status }) => (
-          <div
-            key={name}
-            className="flex items-start gap-4 bg-cv-card border border-cv-teal/20 rounded-xl p-5 transition-all duration-300 hover:border-cv-teal hover:-translate-y-1 hover:shadow-teal-sm"
-          >
-            <span className="text-2xl flex-shrink-0 mt-0.5">{icon}</span>
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <p className="text-cv-bright font-semibold text-sm">{name}</p>
-                {STATUS_STYLES[status] && (
-                  <span className={`text-[10px] font-medium uppercase tracking-wide border rounded-full px-2 py-0.5 whitespace-nowrap ${STATUS_STYLES[status].cls}`}>
-                    {STATUS_STYLES[status].label}
-                  </span>
-                )}
-              </div>
-              <p className="text-cv-teal text-xs font-medium">{date}</p>
+    <Section id="certifications" number="02" label="Certifications & Training" title="Credentials">
+      {/* 1 column on phones, 2 on tablets, 3 on desktop */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+        {certifications.map(({ name, date, status }) => {
+          const style = STATUS_STYLES[status];
+          const highlight = status === 'certified';
+          return (
+            <div
+              key={name}
+              className={`flex flex-col gap-3 p-6 rounded-xl border transition-colors duration-300
+                ${highlight ? 'border-cv-teal bg-cv-card' : 'border-cv-deep bg-cv-card hover:border-cv-muted/40'}`}
+            >
+              {style && (
+                <span className={`self-start font-mono text-[0.7rem] px-2.5 py-1 rounded-md border ${style.cls}`}>
+                  {style.label}
+                </span>
+              )}
+              <p className="font-display text-cv-bright text-lg md:text-xl font-semibold leading-snug">{name}</p>
+              <p className="text-cv-muted text-sm leading-relaxed">{date}</p>
             </div>
-          </div>
-        ))}
+          );
+        })}
       </div>
     </Section>
   );

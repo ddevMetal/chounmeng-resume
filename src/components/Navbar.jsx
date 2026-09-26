@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react';
 
+// Top menu links. Add or reorder freely; each href must match a section id.
 const NAV_LINKS = [
-  { href: '#summary',        label: 'Summary'    },
-  { href: '#certifications', label: 'Certs'      },
-  { href: '#skills',         label: 'Skills'     },
-  { href: '#experience',     label: 'Experience' },
-  { href: '#education',      label: 'Education'  },
-  { href: '#projects',       label: 'Projects'   },
-  { href: '#awards',         label: 'Awards'     },
+  { href: '#summary',        label: 'Summary'        },
+  { href: '#certifications', label: 'Certifications' },
+  { href: '#skills',         label: 'Skills'         },
+  { href: '#experience',     label: 'Experience'     },
+  { href: '#projects',       label: 'Projects'       },
+  { href: '#education',      label: 'Education'      },
+  { href: '#beyond',         label: 'Beyond work'    },
 ];
 
 export default function Navbar() {
@@ -24,61 +25,47 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-300
-        ${scrolled
-          ? 'bg-cv-navy/95 backdrop-blur-md border-b border-cv-teal/20 shadow-teal-sm'
-          : 'bg-cv-navy/75 backdrop-blur-sm'}`}
+      className={`sticky top-0 z-50 transition-all duration-300 border-b
+        ${scrolled ? 'bg-cv-navy/95 backdrop-blur-md border-cv-deep' : 'bg-cv-navy/80 backdrop-blur-sm border-transparent'}`}
     >
-      <div className="max-w-5xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-5 md:px-10 lg:px-16 h-16 flex items-center justify-between">
 
         {/* Logo */}
-        <span className="text-cv-teal font-extrabold tracking-widest text-sm select-none">
-          &lt; TCM /&gt;
-        </span>
+        <a href="#hero" className="flex items-center gap-2.5 font-mono text-sm font-medium text-cv-bright">
+          <span className="w-2.5 h-2.5 rounded-sm bg-cv-teal" aria-hidden="true" />
+          teo.choun.meng
+        </a>
 
         {/* Desktop links */}
-        <ul className="hidden md:flex items-center gap-7">
+        <ul className="hidden lg:flex items-center gap-7">
           {NAV_LINKS.map(({ href, label }) => (
             <li key={href}>
-              <a
-                href={href}
-                className="text-cv-muted hover:text-cv-teal text-xs font-semibold tracking-widest uppercase transition-colors duration-200"
-              >
+              <a href={href} className="text-cv-muted hover:text-cv-bright text-sm transition-colors duration-200">
                 {label}
               </a>
             </li>
           ))}
         </ul>
 
-        {/* Hamburger */}
+        {/* Menu button (phones and tablets) */}
         <button
           onClick={() => setOpen(o => !o)}
-          className="md:hidden flex flex-col gap-[5px] p-2 rounded"
+          className="lg:hidden flex flex-col items-center justify-center gap-[5px] w-11 h-11 rounded-lg border border-cv-deep"
           aria-label="Toggle navigation"
           aria-expanded={open}
         >
-          <span className={`block h-0.5 w-[22px] bg-cv-teal rounded transition-transform duration-300 origin-center
-            ${open ? 'rotate-45 translate-y-[7px]' : ''}`} />
-          <span className={`block h-0.5 w-[22px] bg-cv-teal rounded transition-all duration-300
-            ${open ? 'opacity-0 scale-x-0' : ''}`} />
-          <span className={`block h-0.5 w-[22px] bg-cv-teal rounded transition-transform duration-300 origin-center
-            ${open ? '-rotate-45 -translate-y-[7px]' : ''}`} />
+          <span className={`block h-0.5 w-[18px] bg-cv-bright rounded transition-transform duration-300 origin-center ${open ? 'rotate-45 translate-y-[7px]' : ''}`} />
+          <span className={`block h-0.5 w-[18px] bg-cv-bright rounded transition-all duration-300 ${open ? 'opacity-0 scale-x-0' : ''}`} />
+          <span className={`block h-0.5 w-[18px] bg-cv-bright rounded transition-transform duration-300 origin-center ${open ? '-rotate-45 -translate-y-[7px]' : ''}`} />
         </button>
       </div>
 
       {/* Mobile drawer */}
-      <div
-        className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out
-          ${open ? 'max-h-96 border-b border-cv-teal/20' : 'max-h-0'}`}
-      >
-        <ul className="bg-cv-navy/98 max-w-5xl mx-auto">
+      <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${open ? 'max-h-[28rem] border-t border-cv-deep' : 'max-h-0'}`}>
+        <ul className="bg-cv-navy max-w-6xl mx-auto">
           {NAV_LINKS.map(({ href, label }) => (
-            <li key={href} className="border-b border-cv-teal/10 last:border-0">
-              <a
-                href={href}
-                onClick={close}
-                className="block px-6 py-3.5 text-cv-muted hover:text-cv-teal hover:bg-cv-teal/5 text-sm font-semibold tracking-widest uppercase transition-colors"
-              >
+            <li key={href} className="border-b border-cv-deep last:border-0">
+              <a href={href} onClick={close} className="block px-5 py-3.5 text-cv-text hover:text-cv-teal text-sm transition-colors">
                 {label}
               </a>
             </li>

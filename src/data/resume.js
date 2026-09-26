@@ -8,10 +8,32 @@ export const personal = {
     label: "choun-meng-teo",
   },
   email: "tchounmeng@gmail.com",
+
+  // Hero (top of page)
+  badge: "Open to SOC, NOC and IT infrastructure roles · Singapore",
+  intro:
+    "Career switcher moving into security and infrastructure, starting in security operations. " +
+    "CS degree from SIM / UOW, cloud security certified, Security+ in progress.",
+
+  // Optional photo: put the image in the public/ folder and write its name here, e.g. "photo.jpg".
+  // Leave as "" to hide it.
+  photo: "",
+
+  // The terminal card in the hero. Add, remove or reorder rows freely.
+  whoami: [
+    { key: "target",   value: "SOC · NOC · IT infra" },
+    { key: "cert",     value: "CCSK v4" },
+    { key: "next",     value: "Security+ SY0-701" },
+    { key: "training", value: "Ethical Hacking · Oct 2026" },
+    { key: "degree",   value: "BSc CS · SIM / UOW" },
+    { key: "base",     value: "Singapore" },
+  ],
 };
 
 // ─── Summary ─────────────────────────────────────────────────────────────────
 export const summary = {
+  // Big heading on the left of the Summary section
+  heading: "Operator discipline, now pointed at security.",
   tagline:
     "CS graduate and former SAF First Sergeant moving into security and infrastructure, bringing " +
     "hands-on security training, a cloud security certification, and years of executing under pressure.",
@@ -87,6 +109,7 @@ export const skills = [
 
 // Short "learning next" line shown under the skills
 export const learningNext = [
+  "Networking fundamentals (Network+ syllabus via Professor Messer)",
   "Wireshark and packet analysis",
   "Network scanning (Nmap)",
   "Security+ exam prep",
@@ -308,23 +331,28 @@ export const certifications = [
   },
 ];
 
-// ─── Awards ──────────────────────────────────────────────────────────────────
-export const awards = [
+// ─── Beyond work ─────────────────────────────────────────────────────────────
+// Each card: label (small heading), title, then either text (a sentence) or items (a list).
+export const beyondWork = [
   {
-    icon: "🥈",
-    name: "SDBF Dragonboat Race — 2nd Place",
-    meta: "SAFSA · 2019",
-  },
-  { icon: "🏅", name: "Flames of Merit", meta: "SIM Canoeing Team · 2014" },
-  {
-    icon: "🥇",
-    name: "National Canoeing Championship 1000m k4 — Gold",
-    meta: "2013",
+    label: "Training",
+    title: "Hybrid athlete in progress",
+    text:
+      "Avid runner and regular in the gym, building towards hybrid training that mixes endurance and strength.",
   },
   {
-    icon: "🏆",
-    name: "Sports Excellence Award",
-    meta: "Republic Polytechnic · 2010",
+    label: "Paddling",
+    title: "Canoe & dragon boat",
+    items: [
+      "National Canoeing Championship 1000m K4 · Gold, 2013",
+      "SDBF Dragonboat Race · 2nd, 2019",
+      "SIM Canoeing · Flames of Merit, 2014",
+    ],
   },
-  { icon: "🥈", name: "Pol-Lite Kayak Championship — Silver", meta: "2009" },
+  {
+    label: "Music & tinkering",
+    title: "Guitar and home lab",
+    text:
+      "Play the guitar, and tinker with my home lab server and building things on my phone with Termux.",
+  },
 ];

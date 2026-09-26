@@ -2,11 +2,9 @@ import { personal } from '../data/resume';
 
 export default function Footer() {
   return (
-    <footer className="border-t border-cv-teal/20 py-10 text-center text-cv-muted text-sm">
-      <p>
-        Designed &amp; built by{' '}
-        <strong className="text-cv-teal font-semibold">Teo Choun Meng</strong>
-        {' · '}
+    <footer>
+      <div className="max-w-6xl mx-auto px-5 md:px-10 lg:px-16 py-8 flex flex-col sm:flex-row gap-2 justify-between font-mono text-xs text-cv-muted">
+        <p>© {new Date().getFullYear()} {personal.name}</p>
         <a
           href={personal.github.url}
           target="_blank"
@@ -15,8 +13,7 @@ export default function Footer() {
         >
           {personal.github.label}
         </a>
-      </p>
-      <p className="mt-1 text-xs">© {new Date().getFullYear()} · All rights reserved</p>
+      </div>
     </footer>
   );
 }
