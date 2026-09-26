@@ -162,50 +162,92 @@ export const education = [
 ];
 
 // ─── Projects ────────────────────────────────────────────────────────────────
+// Each project:
+//   type:        "practical" (real-world / self-driven) or "academic" (coursework)
+//   meta:        short context line, e.g. "Solo · 2026" or "Team · Final Year Project"
+//   description: what it is
+//   role:        optional, your part (use for team projects)
+//   tags:        tools used
+//   github:      optional link; leave out for private or unfinished work
+//   note:        optional small line shown when there is no link
 export const projects = [
+  // ── Practical ──
   {
+    type: "practical",
     icon: "🌐",
-    name: "Interactive Resume Webpage",
+    name: "Portfolio Website",
+    meta: "Solo · 2026",
     description:
-      "Designed and built this personal resume site using React, Vite, and Tailwind CSS — entirely coded on a Samsung S24 Ultra via PRoot Debian on Termux, with AI-assisted development.",
+      "This site. Built on a Samsung S24 Ultra via PRoot Debian on Termux, with AI-assisted development. " +
+      "Auto-deploys to GitHub Pages on every push.",
+    tags: ["React", "Vite", "Tailwind", "GitHub Actions"],
     github: "https://github.com/ddevMetal/chounmeng-resume",
   },
   {
+    type: "practical",
+    icon: "🖥️",
+    name: "Home Lab Server",
+    meta: "Solo · AI-assisted setup",
+    description:
+      "Always-on Fedora mini PC for self-hosting: Nginx for web routing, PM2 for keeping services running, " +
+      "Tailscale for private remote access.",
+    tags: ["Linux", "Nginx", "PM2", "Tailscale"],
+  },
+  {
+    type: "practical",
     icon: "⚙️",
     name: "OpenClaw Business Automation V1",
+    meta: "Solo · Prototype",
     description:
-      "AI-powered Discord bot that automates payroll, sales invoicing, and financial reporting for a small business — replacing manual Google Drive workflows. Built on OpenClaw; coded on Samsung S24 Ultra via PRoot Debian on Termux. V2 production release planned.",
-    github: null,
+      "AI-powered Discord bot prototype to automate payroll, sales invoicing and financial reporting for a " +
+      "small business, replacing manual Google Drive workflows.",
+    tags: ["Discord bot", "OpenClaw", "Automation"],
     note: "Private repository",
   },
   {
-    icon: "📱",
-    name: "Fitness Mobile App (FYP)",
+    type: "practical",
+    icon: "🧪",
+    name: "Security Lab Write-ups",
+    meta: "Coming · Oct 2026",
     description:
-      "Final Year Project — Flutter-based fitness application with personalised workout tracking and AI-assisted recommendations.",
+      "Hands-on labs from the ASK Training courses: what I tested, what I found, what I learned.",
+    tags: ["Wireshark", "Nmap", "Kali Linux"],
+    note: "In progress",
+  },
+
+  // ── Academic ──
+  {
+    type: "academic",
+    icon: "🏋️",
+    name: "Wise Workout: Fitness App & Admin Portal",
+    meta: "Team · Final Year Project · 2025",
+    description:
+      "Flutter fitness app with workout tracking and AI recommendations, plus a web admin portal.",
+    role:
+      "Built most of the backend: Firebase database and connection, the admin portal (business sign-up and " +
+      "validation, document review, AI sentiment analysis of testimonials) and the landing page; deployed " +
+      "with Docker and Nginx on Render. AI-assisted development.",
+    tags: ["Firebase", "JavaScript", "Docker", "Nginx", "OpenAI API"],
     github: "https://github.com/xuennon/FYP-25-S2-09",
   },
   {
-    icon: "🤖",
-    name: "Constraint Satisfaction Problem",
+    type: "academic",
+    icon: "🧠",
+    name: "Image Classification: KNN, MLP & CNN",
+    meta: "Individual · Foundations of AI · 2025",
     description:
-      "ML/AI project solving multi-city lighting optimisation using constraint satisfaction and heuristic algorithms.",
-    github: "https://github.com/d3nisacookies/Multi-city-lighting",
+      "Built KNN, MLP and CNN image classifiers, and reported how colour histogram bin size affects KNN accuracy.",
+    tags: ["Python", "Keras", "Machine learning"],
   },
   {
-    icon: "🛒",
-    name: "B2C / C2C Booking Services",
+    type: "academic",
+    icon: "🗄️",
+    name: "Big Data Management Assignments",
+    meta: "Individual · Big Data Management · 2025",
     description:
-      "Full-stack booking platform supporting B2C and C2C models, built collaboratively with modern web technologies.",
-    github: "https://github.com/lester-liam/csit314-sim2025q2-tehsiewdai",
-  },
-  {
-    icon: "🇸🇬",
-    name: "NDP 2021 Digital Content Team",
-    description:
-      "Contributed to Singapore's National Day Parade 2021 as part of the SAF Digital Content Team, supporting multimedia production.",
-    github: null,
-    org: "Singapore Armed Forces",
+      "Merged files in HDFS with a Java app, wrote MapReduce jobs, designed a Hive data warehouse, and " +
+      "processed data with HBase, Pig and Spark (Scala).",
+    tags: ["Hadoop", "Hive", "Spark", "Scala", "Java"],
   },
 ];
 
