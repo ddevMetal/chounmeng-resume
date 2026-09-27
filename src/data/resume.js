@@ -55,8 +55,9 @@ export const summary = {
     {
       label: "Operational discipline",
       text:
-        "4+ years as an SAF Infantry Specialist, leaving as First Sergeant after serving as Section 2IC " +
-        "in the Army Deployment Force.",
+        "Nearly 6 years of military service, including over 4 years as an SAF Infantry Specialist and more " +
+        "than 2 years in peacetime contingency and homeland security operations as Section 2IC in the Army " +
+        "Deployment Force, leaving as First Sergeant.",
     },
     {
       label: "Technical operations",
@@ -148,7 +149,7 @@ export const experience = [
       "Graduated from Specialist Cadet School (SCS), 2017–2018.",
       "Trainer and Section Leader at Basic Military Training Centre (BMTC), 2018.",
       "Completed the Army Deployment Force Combat Qualification Course (CQC), 2019.",
-      "Section 2IC, Operations Company, Army Deployment Force, 2019–2021.",
+      "Section 2IC, Operations Company, Army Deployment Force, 2019–2021: peacetime contingency and homeland security operations in support of the Home Team.",
       "Digital Media Team, NDP 2021.",
     ],
   },
