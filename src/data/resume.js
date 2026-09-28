@@ -155,7 +155,7 @@ export const experience = [
   },
   {
     role: "Event and Sales Executive",
-    company: "Rainbow Electrical Pte Ltd",
+    company: "Rainbow Electrical Services Pte Ltd",
     period: "Sep 2012 – Jul 2016",
     note: "Supervised project delivery for key accounts, from sales through on-site electrical installation.",
   },
