@@ -105,6 +105,7 @@ export const skills = [
       { name: "SQL (Oracle, PL/SQL) & MongoDB", evidence: "Indexing, PL/SQL and normalisation in Oracle; MongoDB queries and aggregation (Database Systems module)" },
       { name: "Big data (Hadoop, Hive, Spark, HBase)", evidence: "HDFS and MapReduce in Java, Hive data warehouse, Spark DataFrames in Scala (Big Data Management module)" },
       { name: "JavaScript / React", evidence: "This portfolio site" },
+      { name: "Tableau", evidence: "Built charts in NYP's Cyber Security & Data Analytics programme" },
     ],
   },
 ];
@@ -327,7 +328,7 @@ export const certifications = [
   },
   {
     icon: "☁️",
-    name: "AWS Cloud Practitioner — Prep Course",
+    name: "AWS Cloud Practitioner — Prep Course (30 hrs)",
     date: "Jun 2025 · SIM Centre for Micro-Credentials",
     status: "course",
   },
