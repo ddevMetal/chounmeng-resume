@@ -55,9 +55,10 @@ export const summary = {
     {
       label: "Operational discipline",
       text:
-        "Nearly 6 years of military service, including over 4 years as an SAF Infantry Specialist and more " +
-        "than 2 years in peacetime contingency and homeland security operations as Section 2IC in the Army " +
-        "Deployment Force, leaving as First Sergeant.",
+        "Nearly 6 years of military service: over 4 years as an SAF Infantry Specialist, including 2 years as " +
+        "Section 2IC in the Army Deployment Force, a high-readiness unit focused on peacetime contingency and " +
+        "homeland security operations, plus national service as a Naval Diving Unit combat diver. " +
+        "Left as First Sergeant.",
     },
     {
       label: "Technical operations",
