@@ -24,7 +24,7 @@ export const personal = {
     { key: "target",   value: "SOC · NOC · IT infra" },
     { key: "cert",     value: "CCSK v4" },
     { key: "next",     value: "Security+ SY0-701" },
-    { key: "training", value: "Ethical Hacking · Oct 2026" },
+    { key: "training", value: "Ethical Hacking · Completed Oct 2026" },
     { key: "degree",   value: "BSc CS · SIM / UOW" },
     { key: "base",     value: "Singapore" },
   ],
@@ -43,8 +43,8 @@ export const summary = {
     {
       label: "Security foundation",
       text:
-        "CCSK certified. Completed ASK Training's Cybersecurity Essentials; Ethical Hacking in Oct 2026, " +
-        "leading to Security+.",
+        "CCSK certified. Completed ASK Training's Cybersecurity Essentials and Ethical Hacking (Oct 2026), " +
+        "now preparing for Security+.",
     },
     {
       label: "Technical base",
@@ -312,7 +312,7 @@ export const certifications = [
     icon: "🕵️",
     name: "Cybersecurity and Ethical Hacking (32 hrs)",
     date: "Oct 2026 · ASK Training Pte Ltd",
-    status: "upcoming",
+    status: "completed",
   },
   {
     icon: "✅",
