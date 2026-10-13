@@ -17,7 +17,7 @@ export default function Certifications() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
         {certifications.map(({ name, date, status }) => {
           const style = STATUS_STYLES[status];
-          const highlight = status === 'certified';
+          const highlight = status === 'certified' || status === 'completed';
           return (
             <div
               key={name}
